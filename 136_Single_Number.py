@@ -1,6 +1,6 @@
 # O(n)
-import collections
+from collections import Counter
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        c = collections.Counter(nums)
+        c = Counter(nums)
         return c.most_common()[-1][0]
