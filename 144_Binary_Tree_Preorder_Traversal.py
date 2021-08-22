@@ -7,21 +7,13 @@
 # Time complexy O(n)
 class Solution:
     def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
-        ans = []
-        def loop(root, ans):
+        def loop(root):
             if root is None:
-                return ans
-            else:
-                ans.append(root.val)
-            if root.right is None and root.left is None:
-                return ans
-            elif root.right is None:
-                return loop(root.left, ans)
-            elif root.left is None:
-                return loop(root.right, ans)
-                
-            else:
-                loop(root.left, ans)
-                loop(root.right, ans)
-                return ans
-        return loop(root, ans)
+                return 
+            ans.append(root.val)
+            loop(root.left)
+            loop(root.right)
+
+        ans = []
+        loop(root)
+        return ans
