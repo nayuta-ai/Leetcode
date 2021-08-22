@@ -3,7 +3,7 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
-
+# O(n)
 class Solution:
     def hasCycle(self, head: ListNode) -> bool:
         fast = head
