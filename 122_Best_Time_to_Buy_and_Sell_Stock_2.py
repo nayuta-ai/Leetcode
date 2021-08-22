@@ -11,5 +11,4 @@ class Solution:
         if sta != 100000:
             ans += prices[len(prices) - 1] - sta
         return ans
-# Runtime 64ms
-# Memory 15.2MB
+# O(n)
