@@ -1,4 +1,5 @@
-# O(n)
+# time O(n)
+# space O(1)
 from collections import Counter
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
