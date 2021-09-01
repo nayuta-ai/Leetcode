@@ -1,8 +1,9 @@
 # time O(n) n:number of loop
 # space O(m) alphabet list:26, out:26^m
+import string
 class Solution:
     def convertToTitle(self, columnNumber: int) -> str:
-        alphabet = [chr(i) for i in range(65,65+26)]
+        alphabet = list(string.ascii_uppercase)
         out = ''
         while columnNumber > 0:
             remainder = columnNumber%26 - 1
