@@ -20,11 +20,13 @@ class MinStack:
     def top(self) -> int:
         if self.stack == []:
             return 
+
         return self.stack[self.lead]
 
     def getMin(self) -> int:
         if self.stack == []:
             return 
+            
         return min(self.stack)
         
 # Your MinStack object will be instantiated and called as such:
