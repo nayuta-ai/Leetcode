@@ -1,5 +1,5 @@
-# time O(n)
-# space O(n)
+# time O(n) n:number of loop
+# space O(n) n:number of loop
 class Solution:
     def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         def loop(root):
