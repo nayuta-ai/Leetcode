@@ -6,9 +6,9 @@ class Solution:
         alphabet = list(string.ascii_uppercase)
         out = ''
         while columnNumber > 0:
-            remainder = columnNumber%26 - 1
+            remainder = columnNumber % 26 - 1
             out = alphabet[remainder] + out
-            columnNumber = columnNumber//26
+            columnNumber = columnNumber // 26
             if remainder == -1:
                 columnNumber -= 1
         return out
