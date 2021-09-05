@@ -3,8 +3,8 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
-# time O(n)
-# space O(n)
+# time O(n) n:length of head
+# space O(n) n:length of head
 class Solution:
     def hasCycle(self, head: ListNode) -> bool:
         fast = head
