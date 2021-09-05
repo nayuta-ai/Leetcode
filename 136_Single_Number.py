@@ -1,4 +1,4 @@
-# time O(n)
+# time O(n) n:length of nums
 # space O(1)
 from collections import Counter
 class Solution:
