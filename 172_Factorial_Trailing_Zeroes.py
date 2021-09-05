@@ -7,5 +7,5 @@ class Solution:
             if n < 5 ** i:
                 break;
                 
-            cnt = cnt + n // (5 ** i)
+            cnt += n // (5 ** i)
         return cnt
