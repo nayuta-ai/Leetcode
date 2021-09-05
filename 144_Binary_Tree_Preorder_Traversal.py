@@ -4,8 +4,8 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
-# time O(n)
-# soace O(n)
+# time O(n) n:number of loop
+# soace O(n) n:number of loop
 class Solution:
     def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         def loop(root):
