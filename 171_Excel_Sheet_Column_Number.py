@@ -6,7 +6,8 @@ class Solution:
         alphabet = list(string.ascii_uppercase)
         length = len(columnTitle)
         ans = 0
+        alphabet_num = 26
         for i in columnTitle:
-            ans = (alphabet.index(i) + 1) * 26 ** (length - 1) + ans
+            ans = (alphabet.index(i) + 1) * alphabet_num ** (length - 1) + ans
             length = length - 1
         return ans
