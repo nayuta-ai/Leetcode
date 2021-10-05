@@ -1,5 +1,5 @@
-# space O(n)
-# time O(n)
+# space O(n) n is length of list nums
+# time O(n) n is length of list nums
 from collections import Counter
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
